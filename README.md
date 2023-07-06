@@ -19,8 +19,8 @@ Run `yarn start` to buy the token desired.
 ## The Values you will modify.
 
 - FLASHBOTS_AUTH_KEY : The bot owner's private key.
-- PRIVATE\*KEY : Private key of buy transaction's signer wallet.
-  \*\*\*(These two variables would be same in most cases.)\_\*\*
+- PRIVATE_KEY : Private key of buy transaction's signer wallet. \
+  **_(These two variables would be same in most cases.)_**
 - RECIPIENT_ADDRESS : Token recipient after buy transation succseed.
 - TOKEN_ADDRESS : Token address that you want to buy.
 - AMOUNT_IN : WETH amount you wanna swap for the token.
