@@ -17,9 +17,11 @@ const RouterABI = [
 ];
 const FactoryABI = ["event PairCreated(address indexed token0, address indexed token1, address pair, uint)"];
 
+const WETH = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+const WETH_GOERLI = "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6";
+
 const addresses = {
-  // WETH: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",   // mainnet
-  WETH: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6", // goerli
+  WETH: process.env.IS_PRODUCTION === "true" ? WETH : WETH_GOERLI,
   factory: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
   router: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
   recipient: process.env.RECIPIENT_ADDRESS,
