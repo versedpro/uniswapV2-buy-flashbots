@@ -6,7 +6,7 @@ Buy any token on Uniswap V2 with flashbots feature, meaning bypass mempool pendi
 
 ### 1. Create your own environment
 
-Check `.env.sample` file and modify the values you desired. Read more[https://github.com/versedpro/uniswapV2-buy-flashbots/blob/769f4f2617d31f335b3fb69e767519c805e95e47/README.md?plain=1#L14]
+Check `.env.sample` file and modify the values you desired. [Read more](#the-values-you-will-modify)
 
 ### 2. Install dependencies
 
@@ -19,8 +19,8 @@ Run `yarn start` to buy the token desired.
 ## The Values you will modify.
 
 - FLASHBOTS_AUTH_KEY : The bot owner's private key.
-- PRIVATE_KEY : Private key of buy transaction's signer wallet.
-  **_(These two variables would be same in most cases.)_**
+- PRIVATE\*KEY : Private key of buy transaction's signer wallet.
+  \*\*\*(These two variables would be same in most cases.)\_\*\*
 - RECIPIENT_ADDRESS : Token recipient after buy transation succseed.
 - TOKEN_ADDRESS : Token address that you want to buy.
 - AMOUNT_IN : WETH amount you wanna swap for the token.
